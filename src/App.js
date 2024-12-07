@@ -35,10 +35,9 @@ const App = () => {
           Submit
         </button>
       </form>
-      <h3> {isSubmitted
-        ? `Full Name : ${firstName} ${lastName}`
-        : `` 
-      } </h3>
+      {isSubmitted && (
+          <h3> Full Name: {firstName} {lastName} </h3>
+      )}
     </div>
   )
 }
